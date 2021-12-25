@@ -5,9 +5,14 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		
-		<!-- 	FAVICON	 -->
 		<link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+
+		<!-- Font Awesom -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+			integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+		<!-- devicon -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+
 
 		<!-- CSS -->
 		<link rel="stylesheet" href="css/style.css" />
@@ -16,28 +21,28 @@
 	</head>
 
 	<body>
+		<a href="#home"><i class="fas fa-chevron-circle-up top-back"></i></a>
 		<section id="home" class="container container-1">
 			<header>
 				<div class="header">
 					<div class="header__logo--box">
 						<img src="./img/Logo-white.png" alt="Vigneshwar-Logo" class="header__logo">
 					</div>
-					<nav class="main-nav">
-						<ul class="main-nav__list">
-							<a href="#home">
-								<li class="main-nav__list--item">Home</li>
-							</a>
-							<a href="#about">
-								<li class="main-nav__list--item">About</li>
-							</a>
-							<a href="#skills">
-								<li class="main-nav__list--item">Skills</li>
-							</a>
-							<a href="#contact">
-								<li class="main-nav__list--item">Say Hello</li>
-							</a>
-						</ul>
-					</nav>
+					<div class="nav-box">
+						<nav class="main-nav">
+							<ul class="main-nav__list">
+								<a href="#about">
+									<li class="main-nav__list--item">About</li>
+								</a>
+								<a href="#skills">
+									<li class="main-nav__list--item">Skills</li>
+								</a>
+								<a href="#contact">
+									<li class="main-nav__list--item">Say Hello</li>
+								</a>
+							</ul>
+						</nav>
+					</div>
 				</div>
 				<!-- MOBILE NAV START-->
 				<div class="navigation">
@@ -66,13 +71,18 @@
 				<!-- MOBILE NAV END -->
 			</header>
 			<div class="intro">
-				<h1 class="intro__heading">
-					<span class="intro__heading--greet">Hi, I am</span><br>
-					<span class="intro__heading--name">Vigneshwar.</span><br>
-					<span class="intro__heading--role">I love building things for Web.</span>
-				</h1>
-				<div class="intro__cta">
-					<a href="./assets/Vigneshwar_Resume.pdf" target="_blank" class="intro__cta--link">Download My Resume</a>
+				<div class="intro__box">
+					<h1 class="intro__heading">
+						<span class="intro__heading--greet">Hi, I am</span><br>
+						<span class="intro__heading--name">Vigneshwar.</span><br>
+						<span class="intro__heading--role">I love building things for Web.</span>
+					</h1>
+				</div>
+				<!-- <a href="./assets/Vigneshwar_Resume.pdf" target="_blank" class="intro__cta">Download My Resume</a> -->
+				<div class="cta-box">
+					<div class="intro__cta">
+						<a href="#" class="intro__cta--link">Download My Resume</a>
+					</div>
 				</div>
 			</div>
 			<p class="bg-section-name bg-home">Intro</p>
@@ -80,12 +90,15 @@
 
 		<section id="about" class="container container-2">
 			<h2 class="section-title">About</h2>
-			<p class="about__description">I'm a front end developer located in Chennai, India.<br>Started out as an
-				Freelance designer, I love to create few new stuff. My interest in Web development started out after
-				designing few websites which led me to HTML and CSS! Being a self taught developer, I am keen on giving
-				users an interactive UI and a great UX.</p>
-			<p class="about__description">Apart from web development, my interests are badminton, books, sketching. I
-				can converse fluently in English and Tamil.</p>
+			<div class="description-box">
+				<p class="about__description">I'm a front end developer located in Chennai, India.<br>Started out as an
+					Freelance designer, I love to create few new stuff. My interest in Web development started out after
+					designing few websites which led me to HTML and CSS! Being a self taught developer, I am keen on
+					giving
+					users an interactive UI and a great UX.</p>
+				<p class="about__description">Apart from web development, my interests are badminton, books, sketching.
+					I can converse fluently in English and Tamil.</p>
+			</div>
 			<p class="bg-section-name bg-about">About</h2>
 		</section>
 
@@ -94,72 +107,52 @@
 			<div class="skills__icon">
 				<div class="skills__icon-list">
 					<div class="skills__icon-list--item">
-						<span onmouseover="hoverIn(this)" onmouseout="hoverOut(this)" class="iconify"
-							data-icon="akar-icons:html-fill" style="color: white;" data-width="50"
-							data-height="50"></span>
+						<i class="devicon-html5-plain-wordmark dev"></i>
 						<span class="skills__icon-list--item-desc">HTML</span>
 					</div>
 					<div class="skills__icon-list--item">
-						<span onmouseover="hoverIn(this)" onmouseout="hoverOut(this)" class="iconify"
-							data-icon="akar-icons:css-fill" style="color: white;" data-width="50"
-							data-height="50"></span>
+						<i class="devicon-css3-plain-wordmark dev"></i>
 						<span class="skills__icon-list--item-desc">CSS</span>
 					</div>
 					<div class="skills__icon-list--item">
-						<span onmouseover="hoverIn(this)" onmouseout="hoverOut(this)" class="iconify"
-							data-icon="cib:sass-alt" style="color: white;" data-width="50" data-height="50"></span>
+						<i class="devicon-sass-original dev"></i>
 						<span class="skills__icon-list--item-desc">SASS/SCSS</span>
 					</div>
 					<div class="skills__icon-list--item">
-						<span onmouseover="hoverIn(this)" onmouseout="hoverOut(this)" class="iconify"
-							data-icon="akar-icons:bootstrap-fill" style="color: white;" data-width="50"
-							data-height="50"></span>
+						<i class="devicon-bootstrap-plain dev"></i>
 						<span class="skills__icon-list--item-desc">BOOTSTRAP</span>
 					</div>
 					<div class="skills__icon-list--item">
-						<span onmouseover="hoverIn(this)" onmouseout="hoverOut(this)" class="iconify" data-icon="cib:js"
-							style="color: white;" data-width="50" data-height="50"></span>
+						<i class="devicon-javascript-plain dev"></i>
 						<span class="skills__icon-list--item-desc">JAVASCRIPT</span>
 					</div>
 					<div class="skills__icon-list--item">
-						<span onmouseover="hoverIn(this)" onmouseout="hoverOut(this)" class="iconify"
-							data-icon="grommet-icons:reactjs" style="color: white;" data-width="50"
-							data-height="50"></span>
+						<i class="devicon-react-original dev"></i>
 						<span class="skills__icon-list--item-desc">REACT JS</span>
 					</div>
 					<div class="skills__icon-list--item">
-						<span onmouseover="hoverIn(this)" onmouseout="hoverOut(this)" class="iconify"
-							data-icon="akar-icons:jquery-fill" style="color: white;" data-width="50"
-							data-height="50"></span>
+						<i class="devicon-jquery-plain-wordmark dev"></i>
 						<span class="skills__icon-list--item-desc">JQUERY</span>
 					</div>
 					<div class="skills__icon-list--item">
-						<span onmouseover="hoverIn(this)" onmouseout="hoverOut(this)" class="iconify" data-icon="bi:git"
-							style="color: white;" data-width="50" data-height="50"></span>
+						<i class="devicon-git-plain dev"></i>
 						<span class="skills__icon-list--item-desc">GIT</span>
 					</div>
 					<div class="skills__icon-list--item">
-						<span onmouseover="hoverIn(this)" onmouseout="hoverOut(this)" class="iconify"
-							data-icon="akar-icons:github-fill" style="color: white;" data-width="50"
-							data-height="50"></span>
+						<i class="devicon-github-original dev"></i>
 						<span class="skills__icon-list--item-desc">GITHUB</span>
 					</div>
 					<div class="skills__icon-list--item">
-						<span onmouseover="hoverIn(this)" onmouseout="hoverOut(this)" class="iconify"
-							data-icon="iconoir:terminal-simple" style="color: white;" data-width="50"
-							data-height="50"></span>
+						<i class="fas fa-terminal dev"></i>
 						<span class="skills__icon-list--item-desc">TERMINAL</span>
 					</div>
 					<div class="skills__icon-list--item">
-						<span onmouseover="hoverIn(this)" onmouseout="hoverOut(this)" class="iconify"
-							data-icon="akar-icons:figma-fill" style="color: white;" data-width="50"
-							data-height="50"></span>
-						<span class="skills__icon-list--item-desc">FIGMA</span>
+						<i class="devicon-npm-original-wordmark dev"></i>
+						<span class="skills__icon-list--item-desc">NODE PACKAGE<br>MANAGER</span>
 					</div>
 					<div class="skills__icon-list--item">
-						<span onmouseover="hoverIn(this)" onmouseout="hoverOut(this)" class="iconify"
-							data-icon="file-icons:adobe" style="color: white;" data-width="50" data-height="50"></span>
-						<span class="skills__icon-list--item-desc">ADOBE CC</span>
+						<i class="devicon-figma-plain dev"></i>
+						<span class="skills__icon-list--item-desc">FIGMA</span>
 					</div>
 				</div>
 			</div>
@@ -167,30 +160,54 @@
 		</section>
 
 		<section id="contact" class="container container-2">
-			<h2 class="section-title">Contact</h2>
-			<div class="form">
-				<h3 class="form-title">Get in Touch!</h3>
-				<form action="#" method="post">
-					<div class="form__group">
-						<input type="text" id="name" class="form__input" placeholder="Full Name" required />
-						<label for="name" class="form__label">Full Name</label>
+			<div class="contact-box">
+				<h2 class="section-title">Contact</h2>
+				<div class="contact">
+					<div class="form">
+						<h3 class="form-title">Get in Touch!</h3>
+						<form action="https://formsubmit.co/el/difeyu" method="POST" enctype="multipart/form-data">
+							<div class="form__group">
+								<input type="text" id="name" class="form__input" placeholder="Full Name" required />
+								<label for="name" class="form__label">Full Name</label>
+							</div>
+							<div class="form__group">
+								<input type="email" id="email" name="email" class="form__input" placeholder="E-mail Address"
+									required />
+								<label for="email" class="form__label">E-mail Address</label>
+								<input type="hidden" name="_subject" value="New submission from Website!">
+							</div>
+							<div class="form__group">
+								<textarea name="message" id="message" class="form__input" cols="30" rows="5"
+									placeholder="Message" required></textarea>
+								<label for="message" class="form__label">Message</label>
+							</div>
+							<input type="text" name="_honey" style="display:none">
+							<input type="hidden" name="_template" value="table">
+							<!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
+							<div class="form-row">
+								<button type="submit" class="btn" id="btn" onclick="errorControl">Send Message</button>
+							</div>
+						</form>
 					</div>
-
-					<div class="form__group">
-						<input type="email" id="email" class="form__input" placeholder="E-mail Address" required />
-						<label for="email" class="form__label">E-mail Address</label>
+					<div class="social-icons">
+						<ul class="social-icons__list">
+							<li class="social-icons__list--item">
+								<a href="https://www.linkedin.com/in/vigneshwar-v20" target="_blank"><i
+										class="fab fa-linkedin"></i></a>
+							</li>
+							<li class="social-icons__list--item">
+								<a href="https://github.com/vigneshwar-dev" target="_blank"><i
+										class="fab fa-github-square"></i></a>
+							</li>
+							<li class="social-icons__list--item">
+								<a href="https://www.instagram.com/vigneshwar_12" target="_blank"><i
+										class="fab fa-instagram"></i></a>
+							</li>
+						</ul>
 					</div>
-					<div class="form__group">
-						<textarea name="message" id="message" class="form__input" cols="30" rows="5"
-							placeholder="Message" required></textarea>
-						<label for="message" class="form__label">Message</label>
-					</div>
-					<div class="form-row">
-						<button type="submit" class="btn" id="btn" onclick="errorControl">Send Message</button>
-					</div>
-				</form>
+				</div>
+				<h2 class="bg-section-name bg-contact">Contact</h2>
 			</div>
-			<h2 class="bg-section-name bg-contact">Contact</h2>
 		</section>
 
 		<!-- Iconify JS -->
